@@ -26,7 +26,7 @@ public class TestGreeter {
 		Assert.assertEquals("Hello javaa", result);
 	}
 	@Test(expected = IllegalArgumentException.class)
-	public void itShouldRaiseException(){
+	public void itShouldRaiseException1(){
 		String param="MAN";
 		greeter.sayHello(param);
 	}
