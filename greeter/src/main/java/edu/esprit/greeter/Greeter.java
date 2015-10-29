@@ -14,7 +14,7 @@ public class Greeter {
 			if(name.equals("MAN"))
 				throw new IllegalArgumentException();
 		
-		
+		int x;		
 		return "Hello "+ name;
 
 	}
