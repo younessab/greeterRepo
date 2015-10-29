@@ -19,6 +19,17 @@ public class TestGreeter {
 		String param="MAN";
 		greeter.sayHello(param);
 	}
+
+	@Test 
+	public void itShouldSayHello(){	
+		String result= greeter.sayHello("java");
+		Assert.assertEquals("Hello javaa", result);
+	}
+	@Test(expected = IllegalArgumentException.class)
+	public void itShouldRaiseException(){
+		String param="MAN";
+		greeter.sayHello(param);
+	}
 	@After
 public void tearDown()
 	{
